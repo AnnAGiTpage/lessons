@@ -1,0 +1,136 @@
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* font-family:Roboto */
+/* --------------------------------------------------------------------------- */
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit/Larsseit.woff2") format("woff2"), url(../fonts/Larsseit/Larsseit.woff) format("woff"); 
+    font-display: swap;
+    font-weight: 400;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit/Larsseit-Medium.woff2") format("woff2"),  url("../fonts/Larsseit/Larsseit-Medium.woff") format("woff"); 
+    font-weight: 500;
+    font-size: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit/Larsseit-Bold.woff") format("woff"); 
+    font-weight: 700;
+    font-size: normal;
+    font-display: swap;
+}
+/* ---------------------------------Cyrillic------------------------------------------ */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff"); 
+    font-weight: 400;
+    font-size: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato/Lato-Medium.woff") format("woff"); 
+    font-weight: 500;
+    font-size: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff"); 
+    font-weight: 700;
+    font-size: normal;
+    font-display: swap;
+}
+
+/* Header styles */
+img{
+    width: 15%;
+    height: 15%;
+}
+
+.header_menu{
+    font-family: "Larsseit";
+    
+}
+
+ul{
+    color: rgba(212, 237, 25, 0.829);
+}
+
+.menu_list ~ ol{
+    color: orange;
+}
+
+h2{
+    font-family: "Roboto";
+    font-weight: 900;
+    color: rgb(142, 15, 140);
+}
+
+.reset_title{
+    color:  rgba(212, 237, 25, 0.829);
+}
+
+.about_reset span{
+    font-family: "Larsseit";
+    font-weight: 500;
+    color: black;
+
+}
+
+.about_reset > p{
+    font-family: "Larsseit";
+    color: rgb(102, 101, 114);
+}
+
+.about_reset ul a{
+    color: rgb(255, 0, 34);
+}
+
+h3{
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(32, 15, 142);
+
+}
+
+.about_reset + p{
+    font-family: "Lato";
+    font-weight: 700;
+    color: rgb(136, 127, 255);
+}
+
+.about_reset a {
+    color: rgb(123, 0, 255);
+    font-weight: 500;
+}
+
+/* --------------------- */
+
+.combinators_title{
+    color: orange;
+}
+
+.about_combinators > p{
+    font-family: "Larsseit";
+    color: rgb(48, 47, 61);
+}
+
+.about_combinators ul{
+    color: rgb(148, 143, 144);
+}
+
+.about_combinators ul a{
+    font-family: "Larsseit";
+    color: rgb(123, 0, 255);
+    font-weight: 500;
+}

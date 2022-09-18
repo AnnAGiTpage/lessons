@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson_4</title>
+</head>
+<body>
+    <header>
+        <div class="header_logo" id="top"><a href="https://www.google.com/" target="_blank"><img src="img/logo.jpg" alt="logo"></a></div>
+        <div>
+            <ul class="header_menu">
+                <ol class="menu_list"><a href="#1">CSS Reset vs Normalize</a></ol>
+                <ol class="menu_list2"><a href="#2">CSS combinators</a></ol>
+            </ul>
+        </div> <br>
+    </header>
+    <main>
+        <div id="1" class="about_reset">
+            <h2 class="reset_title">CSS Reset vs Normalize</h2>
+            <p>Browsers give plain ol' HTML a set of default styles, but these styling choices aren't necessarily consistent across all browsers. These default styles can also interfere with our layout in unexpected ways as we write our own styles.
+                It's common practice to clear out the default styles and start with a blank slate before you start working on your CSS.
+                If you're interested in the default CSS styles that are applied in your browser, you can view these links:
+            </p> <br>
+            <ul>
+                <li><a href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" target="_blank">Chrome</a></li>
+                <li><a href="https://searchfox.org/mozilla-central/source/layout/style/res/html.css" target="_blank">Firefox</a></li>
+                <li><a href="http://web.archive.org/web/20170122223926/http://www.iecss.com/" target="_blank">Internet Explorer</a></li>
+            </ul> <br>
+            <p>There are two approaches used to reconstruct our styles: <span>resetting</span> the default styles and <span>normalizing</span> the default styles.
+                Both of these techniques aim to accomplish the same thing – getting the default styles out of our way as we work – but they go about doing that in slightly different ways.
+                Check out this <a href="https://codepen.io/nategreen/pen/MwxRvP?editors=110" target="_blank">CodePen example</a> to see the difference between reset and normalize in action.
+            </p> <br>
+            <h3>Reset</h3>
+            <p>A reset file is a set of CSS rules that resets the styling of all HTML elements to a consistent baseline. It is a 'slash and burn' approach that wipes out all the default styles and lets you start from scratch. 
+                If you want to truly start from scratch, a reset file will let you do that.
+                For more information on the thinking behind reset files, check out this <a href="http://meyerweb.com/eric/thoughts/2007/04/18/reset-reasoning/" target="_blank">article</a>.
+                A great base for a reset file is Eric Meyer's <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a>.
+            </p> <br>
+            <h3>Normalize</h3>
+            <p>A normalize file is a less extreme way to make the browser defaults consistent. It provides cross-browser consistency without completely losing the default styles and working with modern CSS standards
+                A great base normalize file is Nicolas Gallagher's <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>. 
+                For more information on normalize.css and how it works, check out this <a href="http://nicolasgallagher.com/about-normalize-css/" target="_blank">article</a>.
+            </p><br>
+        </div>
+        <p>Идём дальше</p>
+        <div id="2" class="about_combinators"> <br> 
+            <h2 class="combinators_title">CSS Combinators</h2>
+            <p>A combinator is something that explains the relationship between the selectors.
+                A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+                There are four different combinators in CSS:
+            </p>
+            <ul>
+                <li>descendant selector (space) - matches all elements that are descendants of a specified element.</li>
+                <li>child selector (>) - selects all elements that are the children of a specified element.</li>
+                <li>adjacent sibling selector (+) - is used to select an element that is directly after another specific element.
+                    Sibling elements must have the same parent element, and "adjacent" means "immediately following".</li>
+                <li>general sibling selector (~) - elects all elements that are next siblings of a specified element.</li>
+            </ul><br>
+            <h3>All CSS Combinator Selectors</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/cssref/sel_element_element.asp" target="_blank">Element Element</a> (div p) = Selects all p elements inside div elements</li>
+                <li><a href="https://www.w3schools.com/cssref/sel_element_gt.asp" target="_blank">Element > Element </a>(div > p) = Selects all p elements where the parent is a div element</li>
+                <li><a href="https://www.w3schools.com/cssref/sel_element_pluss.asp" target="_blank"> Element+Element</a>	(div + p) =	Selects the first p element that are placed immediately after div elements</li>
+                <li><a href="https://www.w3schools.com/cssref/sel_gen_sibling.asp" target="_blank">Element1~Element2</a> (p ~ ul) = Selects every ul element that are preceded by a p element</li>
+            </ul>   
+        </div>
+    </main>
+    <footer>
+        <div class="header_logo"><a href="#top"><img src="img/logo.jpg" alt="logo"></a></div>
+    </footer>
+</body>
+</html>

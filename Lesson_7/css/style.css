@@ -1,0 +1,116 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+body{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    color: #424551;
+}
+
+[class*="__container"]{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-bottom: 92px;
+}
+
+.main_img img{
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main_subtitle{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 26px;
+}
+
+.main_text p{
+    line-height: 160%;
+    margin-bottom: 24px;
+}
+
+.main_text{
+    margin-bottom: 48px;
+}
+
+
+.main_quote{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 46px;
+    background: url(../img/Quotation/braces.png) 0 0 no-repeat;
+    padding-left: 58px;
+
+}
+
+.main_list{
+    line-height: 160%;
+    margin-bottom: 24px;
+}
+
+.main_list_item{
+    background: url(../img/check.png) 0 5px no-repeat;
+    padding-left: 32px;
+    margin-bottom: 4px;
+}
+
+/* -------------------------- Background practice*/
+.block{
+    background: url(../img/hr.jpg) repeat-y 0 0 / 5%, linear-gradient(#9A5044, #E8D9A9);
+    padding: 15px 0;      
+}
+
+.block_text img{
+    max-width: 100%;
+    margin-bottom: 45px;
+}
+
+.block_text h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 30px;
+}
+
+.block_text p{
+    line-height: 160%;
+}
+
+.block_2{
+    background: url(../img/dots-free.jpg) repeat-y 100% 100% / 5%, url(../img/dots-free.jpg) repeat-y 0 0 / 5%, linear-gradient(#219941, #9fecb6);
+    text-align: center;
+}
+
+.block_back{
+    background: url(../img/jGlzr.png) no-repeat 0 0;
+    padding: 15px 0;
+    background-attachment: fixed;
+}
+
+.block_3{
+    background: url(../img/SvWWN.png) 0 0/cover no-repeat;
+    text-align: end;
+    padding: 15px 0;
+    background-attachment: fixed;
+}
+
+.light{
+    color: #E8D9A9;
+}
+

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+body{
+	/* Значення за замовченням */
+	font-family: "Lato";
+	background: #424551;
+	color: aliceblue;
+	font-size: 20px;
+}
+/* ============================ */
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+/* ============================ */
+/* Обмежуючий контейнер */
+[class*="__container"]{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/* ============================ */
+
+.main-block{
+	display: flex;
+	padding: 50px;	
+}
+
+.js{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.main-block h1{
+	font-size: 40px;
+	font-size: 900;
+}
+
+.main-block h1 span{
+	text-transform: uppercase;
+	color: rgb(0, 255, 47);
+	letter-spacing: 2px;
+}
+
+h3{
+	font-size: 25px;
+	color: rgb(203, 196, 188);
+	font-size: 700;
+	margin-bottom: 20px;
+}
+
+h3 span{
+	color: aquamarine;
+}
+
+article li{
+	margin-bottom: 10px;
+}
+
+li span{
+	color: #cccc26;
+}
+
+
+

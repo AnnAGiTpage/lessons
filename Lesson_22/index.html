@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons8-done-16.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LessonJS_22</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="main-block">
+                <div class="main-block__container js">
+                    <h1 class="js-title">Learning <span>Java Script</span> basis</h1>
+                    <div class="js-secondVideo">
+                        <h3>Learning <span><i>syntacsis</i> basis </span>Java Script</h3>
+                        <article class="js-secondVideo-tasks">
+                            <li><span>Вариант №1</span> <br> console.log('Учим JS') <br>
+                                ошибку не вызовит, но лучше закрыть точкой с запятой (;)
+                            </li>
+                            <li><span>Вариант №2</span> <br> console.log('JS') <br> console.log('Учим') <br>
+                                ошибку не вызовит (так как начитается с новой строки), но лучше закрыть точкой с запятой (;)
+                            </li>
+                            <li><span>Вариант №3</span><br> console.log('Учим') console.log('JS') <br>
+                                вызовит ошибку (так как в одном рядке), нужно закрыть точкой с запятой каждую команду (;)
+                            </li>
+                            <li><span>Вариант №4</span><br> console.log('JS'); <br> console.log('Учим');<br>
+                                ошибку не вызовит (так как закрыто ;), все отлично.
+                            </li>
+                        </article>
+                    </div> 
+                    <div class="js-thirdVideo">
+                        <h3>Learning <span><i>variables and constants values</i></span> of Java Script</h3>
+                        <article class="js-thirdVideo-tasks">
+                            <li><span>Вариант №1</span> <br> let user = 'Вася' let age = 36<br>
+                                ошибку вызовит отсутствие точкой с запятой (;) между переменными в одной строке
+                            </li>
+                            <li><span>Вариант №2</span> <br> let myage = 36;<br>
+                                ошибку вызовит отсутствие camelStyle в написание названия переменных
+                            </li>
+                        </article>
+                    </div>
+                    <div class="js-fourthVideo">
+                        <h3>Learning Java Script <span><i>data types and data structures</i></span></h3>
+                        <article class="js-fourthVideo-tasks">
+                            <li><span>Вариант №1</span> <br> let userAge = 36;<br> let userInfo = 'Фрилансер ${userAge}'; <br>
+                                ошибку вызовит не правильное написание обекта userInfo. Правильное: <br> let userAge = 36; <br>
+                                let userInfo = { Фрилансер: userAge};
+                            </li>
+                            <li><span>Вариант №2</span> <br>let userHeight = 145 / 0;<br>
+                                Не верно, userHeight вернет значение Infinity(выполняется деление, это выражение больше любого числа, он является верным в отличии от NaN), тип данных number
+                            </li>
+                            <li><span>Вариант №3</span> <br>let userName;<br>
+                                Тип данных undefined так как значение не заданно или является не определенным в отличии от null(пустота)
+                            </li>
+                            <li><span>Вариант №4</span> <br>let userSize - "45" / "8";<br>
+                                Тип данных number, хоть значение и задано как строчное, но значения числовые и оператор деления преобразовывает их в числовые
+                            </li>
+                        </article>
+                    </div>   
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

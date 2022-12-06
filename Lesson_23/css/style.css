@@ -1,0 +1,28 @@
+
+body{
+	/* Значення за замовченням */
+	font-family: "Lato";
+	color: #424551;
+	/* font-size: 16px; */
+}
+/* ============================ */
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+/* ============================ */
+/* Обмежуючий контейнер */
+[class*="__container"]{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/* ============================ */
